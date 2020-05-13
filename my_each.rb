@@ -8,4 +8,5 @@ def hello(array)
   collection
 end
 
+list = ["ab", "cd", "ef"]
 hello(list) {|i| "Hello #{i} what's up?"}
