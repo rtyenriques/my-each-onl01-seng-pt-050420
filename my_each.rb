@@ -1,15 +1,11 @@
-def my_each(array)
-  i=0
+def hello(array)
+  i = 0
+  collection = []
   while i < array.length
-    yield array[i]
+    collection << yield(array[i])
     i += 1
-    end
-end
-
-colors = ["Gray", "Blue", "Green", ]
-
-my_each (colors) do |color|
-  if color.start_with ? ("G")
-    puts "Colors thats start with G are #{color}"
   end
+  collection
 end
+
+hello(list) {|i| "Hello #{i} what's up?"}
